@@ -1,0 +1,20 @@
+[Unit]
+Description=MCP-Weather
+After=network-online.target
+
+[Container]
+Image=localhost/atareao/mcp-weather:latest
+ContainerName=mcp-weather
+PublishPort=3001:3001
+
+# Environment
+Environment=RUST_LOG=mcp_weather=debug
+
+# Networks
+Network=traefik.network
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
