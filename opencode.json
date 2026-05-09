@@ -1,0 +1,15 @@
+{
+    "$schema": "https://opencode.ai/config.json",
+    "mcp": {
+        "mcp-just": {
+            "type": "local",
+            "command": ["just-mcp", "--stdio"],
+            "enabled": true
+        },
+        "mcp-qctl": {
+            "type": "local",
+            "command": ["just-qctl"],
+            "enabled": true
+        }
+    }
+}
