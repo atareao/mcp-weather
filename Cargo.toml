@@ -29,4 +29,4 @@ thiserror = "2.0"
 async-trait = "0.1"
 
 # Cosas
-openssl = { version = "0.10.79", features = ["vendored"] }
+openssl = { version = "0.10.80", features = ["vendored"] }
